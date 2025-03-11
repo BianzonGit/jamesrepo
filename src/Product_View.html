@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce UI</title>
+    <link rel="stylesheet" href="css/Product_View_styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <aside class="sidebar">
+        <a href="#"><img src="Product_View_Assets/side nav logo.png" alt="Home" class="sidebar-icon"></a>
+        <a href="#"><img src="Product_View_Assets/side nav section.png" alt="Categories" class="sidebar-icon"></a>
+    </aside>    
+
+    <main>
+        <header class="top-navbar">
+            <img src="Product_View_Assets/nav top logo.png" alt="Leaf Icon" class="header-icon">
+            <h1>Let's order fresh items for you.</h1>
+
+            <nav class="profile-nav">
+                <button class="profile-button" onclick="toggleDropdown()">
+                    <img src="Product_View_Assets/profile.png" alt="User Profile" class="profile-picture">
+                </button>
+                <menu class="dropdown-menu" id="dropdown">
+                    <li>
+                        <a href="/logout">
+                            <span>Logout</span>
+                            <img src="Product_View_Assets/logout-icon.png" alt="Logout Icon" class="logout-icon">
+                        </a>
+                    </li>
+                </menu>
+            </nav>
+        </header>
+   
+        <section class="search-cart">
+            <form class="search-box">
+                <input type="text" placeholder="Search Products">
+                <i class="fas fa-search"></i>
+            </form>
+            <button class="cart-button">Cart (0)</button>
+        </section>
+
+        <section class="product-header">
+        <a href="/products" class="back-link">
+            <span class="back-icon">◀</span>
+            <h2>All Products (36)</h2>
+        </a>
+        </section>
+
+        <section class="product-info">
+            <section class="product-gallery">
+                <img src="Product_View_Assets/burgir.png" alt="Main Product" class="main-image">
+                <section class="thumbnail-gallery">
+                    <img src="Product_View_Assets/burgir small.png" alt="Thumbnail 1">
+                    <img src="Product_View_Assets/family_size.png" alt="Thumbnail 2">
+                    <img src="Product_View_Assets/combo 2.png" alt="Thumbnail 3">
+                    <img src="Product_View_Assets/breakfast.png" alt="Thumbnail 4">
+                </section>
+            </section>
+
+            <section class="product-details">
+                <h2>Vegetables</h2>
+                <p class="rating">⭐⭐⭐⭐ <span class="rating num">36 Rating</span></p>
+                <button class="price-button">$10</button>
+                <p class="description">
+                    Lorem ipsum dolor sit amet consectetur. Eget sit posuere enim facilisi. 
+                    Pretium orci venenatis habitasse gravida nulla tincidunt iaculis. 
+                    Aliquet at massa quisque libero viverra ut sed. 
+                    Est vulputate est rutrum nunc nunc pellentesque ultrices pharetra. 
+                    Mauris euismod sed vel quisque tincidunt suspendisse sed turpis volutpat.
+                </p>
+
+                <section class="purchase">
+                    <div class="quantity-container">
+                        <label for="quantity">Quantity</label>
+                        <div class="quantity-wrapper">
+                            <div class="quantity-box">
+                                <input type="text" id="quantity" inputmode="numeric" value="1">
+                            </div>
+                            <div class="quantity-buttons">
+                                <button class="qty-btn up" aria-label="Increase quantity">▲</button>
+                                <button class="qty-btn down" aria-label="Decrease quantity">▼</button>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="total-container">
+                        <label>Total Amount</label>
+                        <span class="total">$10</span>
+                    </div>
+                
+                    <button class="add-to-cart"> Add to Cart</button>
+                </section>
+            </section>
+        </section>
+
+        <section class="similar-products">
+            <h2>Similar Items</h2>
+            <ul>
+                <li>
+                    <img src="Product_View_Assets/salad.png" alt="Similar Item">
+                    <p>Vegetables</p>
+                    <p>⭐⭐⭐⭐ 36 Rating</p>
+                    <p class="price">$10</p>
+                </li>
+                <li>
+                    <img src="Product_View_Assets/juice.png" alt="Similar Item">
+                    <p>Vegetables</p>
+                    <p>⭐⭐⭐⭐ 36 Rating</p>
+                    <p class="price">$10</p>
+                </li>
+                <li>
+                    <img src="Product_View_Assets/combo.png" alt="Similar Item">
+                    <p>Vegetables</p>
+                    <p>⭐⭐⭐⭐ 36 Rating</p>
+                    <p class="price">$10</p>
+                </li>
+                <li>
+                    <img src="Product_View_Assets/pasta.png" alt="Similar Item">
+                    <p>Vegetables</p>
+                    <p>⭐⭐⭐⭐ 36 Rating</p>
+                    <p class="price">$10</p>
+                </li>
+                <li>
+                    <img src="Product_View_Assets/lunch.png" alt="Similar Item">
+                    <p>Vegetables</p>
+                    <p>⭐⭐⭐⭐ 36 Rating</p>
+                    <p class="price">$10</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <script src="js/Product_view.js"></script>
+</body>
+</html>
